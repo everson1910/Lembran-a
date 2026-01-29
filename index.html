@@ -117,7 +117,7 @@
     <canvas id="scratch"></canvas>
 
     <div class="win" id="win">
-      <div class="card"></div>
+      <div class="card">💖</div>
     </div>
   </div>
 
@@ -253,7 +253,7 @@
       const p=getPos(e);
       scratchLine(last.x,last.y,p.x,p.y);
       last=p;
-      if(scratchedPercent()>0.99) finish();
+      if(scratchedPercent()>0.95) finish();
     }
     function up(){ isDown=false; last=null; }
 
